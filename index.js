@@ -45,6 +45,8 @@ function showCommits(i) {
         </div>`
     }
     $('#details').html(commitsHTML);
+  }).fail(function(error){
+    displayError();
   })
 }
 
