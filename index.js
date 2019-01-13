@@ -30,7 +30,11 @@ function searchRepositories(){
 function showCommits(i){
   const repo = i.dataset.repository;
   const owner = i.dataset.owner;
-  $.get('https://api.github.com/repos/${owner}/${repo}/commits', function(response))
+  $.get('https://api.github.com/repos/${owner}/${repo}/commits', function(response){
+    const commits = response.items;
+    let commitsHTML = [];
+    
+  }
 }
 
 function displayError(){
