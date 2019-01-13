@@ -31,7 +31,7 @@ function showCommits(i){
   const repo = i.dataset.repository;
   const owner = i.dataset.owner;
   $.get('https://api.github.com/repos/${owner}/${repo}/commits', function(response){
-    const commits = response.items;
+    const c = response.items;
     let commitsHTML = [];
     
   }
